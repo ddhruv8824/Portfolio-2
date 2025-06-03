@@ -15,8 +15,7 @@ const Footer = async () => {
         },
     );
 
-    const { stargazers_count, forks_count } =
-        (await repoStats.json()) as RepoStats;
+    await repoStats.json();
 
     return (
         <footer className="text-center pb-5" id="contact">
@@ -29,9 +28,8 @@ const Footer = async () => {
                     {GENERAL_INFO.email}
                 </a>
 
-
-                    {/* Note: If you are not Tajmirul, use this copyright message instead */}
-                    {/* <a href='https://www.me.toinfinite.dev/' className="leading-none text-muted-foreground hover:underline hover:text-white">
+                {/* Note: If you are not Tajmirul, use this copyright message instead */}
+                {/* <a href='https://www.me.toinfinite.dev/' className="leading-none text-muted-foreground hover:underline hover:text-white">
                         Design & built by Tajmirul Islam <br />
                         Revised by YOUR NAME
 
@@ -44,7 +42,6 @@ const Footer = async () => {
                             </span>
                         </div>
                     </a> */}
-                
             </div>
         </footer>
     );
