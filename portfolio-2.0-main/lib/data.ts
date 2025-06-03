@@ -12,7 +12,10 @@ export const GENERAL_INFO = {
 
 export const SOCIAL_LINKS = [
     { name: 'github', url: 'https://github.com/ddhruv8824' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
+    {
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/in/dhruv-suthar-57512b232/',
+    },
 ];
 
 export const MY_STACK = {
